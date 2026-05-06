@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momen SMK Bina Mandiri Bogor</title>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2ecc71; /* Warna hijau preferensi Anda */
+            --dark-blue: #1a2a6c;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: #334155;
+        }
+
+        /* --- Header Galeri --- */
+        .gallery-header {
+            background: var(--primary-green);
+            padding: 60px 5%;
+            text-align: center;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .gallery-header h1 { font-size: 2.5rem; margin: 0; }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.5);
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover { background: white; color: var(--primary-green); }
+
+        /* --- Layout Album --- */
+        .album-section {
+            padding: 40px 5%;
+        }
+
+        .album-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Grid System: 3 Kolom Desktop, 2 Kolom HP */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            aspect-ratio: 1 / 1; /* Biar kotak rapi */
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover { transform: translateY(-5px); }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsif HP */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .gallery-header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-header">
+        <h1 data-aos="fade-down">Momen Sekolah</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Dokumentasi kegiatan SMK Bina Mandiri Bogor</p>
+        <a href="index.html" class="back-btn" data-aos="fade-up" data-aos-delay="400">Kembali ke Beranda</a>
+    </div>
+
+    <main class="album-section">
+        
+        <!-- Album 1: Festival Sastra 2026 -->
+        <div class="album-title" data-aos="fade-right">
+            <span>Festival Sastra 2026</span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in"><img src="momen11.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="momen12.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300"><img src="momen13.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400"><img src="momen5.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500"><img src="momen4.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600"><img src="momen6.JPG" alt="Momen 3"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700"><img src="momen7.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800"><img src="momen8.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900"><img src="momen9.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000"><img src="momen10.JPG" alt="Momen 2"></div>
+        </div>
+
+        <!-- Album 2: Upacara Hari Kartini -->
+        <div class="album-title" data-aos="fade-right">
+            <span>Upacara Hari Kartini 2026</span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in"><img src="momen14.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="momen15.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300"><img src="momen16.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400"><img src="momen17.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500"><img src="momen18.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600"><img src="momen19.JPG" alt="Momen 3"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700"><img src="momen20.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800"><img src="momen21.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900"><img src="momen22.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000"><img src="momen23.JPG" alt="Momen 2"></div>
+        </div>
+
+        <!-- Album 3: Pameran Karya DKV -->
+        <div class="album-title" data-aos="fade-right">
+            <span>Pameran Karya DKV</span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in"><img src="momen24.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="momen25.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300"><img src="momen26.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400"><img src="momen27.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500"><img src="momen28.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600"><img src="momen29.JPG" alt="Momen 3"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700"><img src="momen30.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800"><img src="momen31.JPG" alt="Momen 2"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900"><img src="momen32.JPG" alt="Momen 1"></div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000"><img src="momen33.JPG" alt="Momen 2"></div>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 40px; color: #94a3b8; font-size: 0.9rem;">
+        &copy; 2026 SMK Bina Mandiri Bogor. All rights reserved.
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false, // Animasi berulang sesuai permintaan Anda
+            mirror: true
+        });
+    </script>
+</body>
+</html>

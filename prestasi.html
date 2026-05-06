@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Siswa | SMK Bina Mandiri Bogor</title>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-green: #2ecc71;
+            --dark-blue: #1a2a6c;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: #334155;
+        }
+
+        .header {
+            background: var(--primary-green);
+            padding: 60px 5%;
+            text-align: center;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .header h1 { font-size: 2.5rem; margin: 0; font-weight: 800; }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.5);
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover { background: white; color: var(--primary-green); }
+
+        .container {
+            padding: 40px 10%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .achievement-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 15px; 
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-left: 6px solid var(--primary-green);
+        }
+
+        .achievement-card:hover { 
+            transform: translateX(10px); 
+            background: #f0fff4; 
+        }
+
+        .icon-box { 
+            background: #e8f5e9; 
+            color: var(--primary-green); 
+            padding: 15px; 
+            border-radius: 12px; 
+            font-size: 1.5rem; 
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .text-box h3 { 
+            margin: 0; 
+            font-size: 1.1rem; 
+            color: var(--dark-blue); 
+            line-height: 1.3;
+        }
+
+        .text-box p { 
+            margin: 5px 0 0; 
+            font-size: 0.9rem; 
+            color: #64748b; 
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px 5%; }
+            .header h1 { font-size: 1.8rem; }
+            .achievement-card { gap: 15px; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 data-aos="fade-down">Catatan Prestasi Siswa</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Kebanggaan SMK Bina Mandiri Bogor</p>
+        <a href="index.html" class="back-btn" data-aos="fade-up" data-aos-delay="200">Kembali ke Beranda</a>
+    </div>
+
+    <div class="container">
+        <!-- List Prestasi dari Foto -->
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-award"></i></div>
+            <div class="text-box">
+                <h3>1st The Best Of Costume & Make Up</h3>
+                <p>Bersinergi dalam PORSENI, Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-award"></i></div>
+            <div class="text-box">
+                <h3>2nd The Best Of Performance</h3>
+                <p>Bersinergi dalam PORSENI, Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-trophy"></i></div>
+            <div class="text-box">
+                <h3>Juara 1 Online Futsal Tournament</h3>
+                <p>Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-star"></i></div>
+            <div class="text-box">
+                <h3>Juara 1 Lomba MTQ</h3>
+                <p>Tingkat SMA Ajang Kreasi Seni Islam (Aksi) 13th SE-JABODETABEK</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-user-ninja"></i></div>
+            <div class="text-box">
+                <h3>Juara 1, 2 dan 3 Kategori Tanding</h3>
+                <p>Kejuaraan Nasional "Bogor Silat Championship serie 2", Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-medal"></i></div>
+            <div class="text-box">
+                <h3>Juara Second Place</h3>
+                <p>Soccer 4 Change event, Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-trophy"></i></div>
+            <div class="text-box">
+                <h3>Juara 2 dan 3 BNN cup</h3>
+                <p>Antar pelajar Se-Jabodetabek</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-futbol"></i></div>
+            <div class="text-box">
+                <h3>Juara IV Futsal Sempoer Women Cup 2019</h3>
+                <p>Kategori SMA/SMK di Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-medal"></i></div>
+            <div class="text-box">
+                <h3>Juara 2 O2SN</h3>
+                <p>Bidang Futsal Kota Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-video"></i></div>
+            <div class="text-box">
+                <h3>Juara 2 Lomba Video Kreatif Islam</h3>
+                <p>Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-futbol"></i></div>
+            <div class="text-box">
+                <h3>Juara 3 Lomba Futsal Putri</h3>
+                <p>Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+            <div class="text-box">
+                <h3>Juara 1 Lomba Video Pendek via HP</h3>
+                <p>Jakarta</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+            <div class="text-box">
+                <h3>Juara 3 Lomba Animasi 2D (Dua Dimensi)</h3>
+                <p>Jakarta</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-mask"></i></div>
+            <div class="text-box">
+                <h3>Juara Harapan 1 Lomba Kreasi Costum Player (Cosplay)</h3>
+                <p>Jakarta</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-user-ninja"></i></div>
+            <div class="text-box">
+                <h3>Juara 1, 2, Dan 3 Kategori Tanding</h3>
+                <p>Kejuaraan Pencak Silat PORIN CUP IV PPS Padjadjaran Nasional Cab. Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-trophy"></i></div>
+            <div class="text-box">
+                <h3>Juara Umum II Kejuaraan Pencak Silat</h3>
+                <p>PORIN CUP IV PPS Padjadjaran Nasional Cab. Bogor</p>
+            </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-right">
+            <div class="icon-box"><i class="fas fa-palette"></i></div>
+            <div class="text-box">
+                <h3>Juara 1 dan 3 Lomba Desain Poster Islami</h3>
+                <p>Bogor</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #94a3b8; font-size: 0.8rem;">
+        &copy; 2026 SMK Bina Mandiri Bogor. All rights reserved.
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true
+        });
+    </script>
+</body>
+</html>
